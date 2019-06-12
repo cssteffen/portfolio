@@ -1,0 +1,175 @@
+/*======GLOBAL STYLING=======*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(63, 63, 63);
+  text-align: center;
+  line-height: 1.5;
+}
+main {
+}
+
+h2 {
+  margin: 0;
+}
+h4 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav,
+footer {
+  padding: 0% 0;
+  background-color: #aaa;
+}
+
+section {
+  min-height: 200px;
+  padding: 0% 0;
+  margin: 0 auto;
+  background-color: #bbb;
+}
+
+/*section:nth-child(even) {
+  background-color: #ddd;
+}*/
+/*======End of Global======*/
+
+/*======NAVIGATION SECTION=======*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 60px;
+}
+
+ul {
+  display: inline-flex;
+  float: left;
+  list-style: none;
+}
+
+li {
+  //display: none;
+  margin-right: 10px;
+  padding: 3px;
+}
+
+li:hover {
+  background: #ddd;
+}
+
+/*======HEADER SECTION=======*/
+header {
+  padding: 10% 0;
+  background: url(https://user-images.githubusercontent.com/30050423/59303042-e3630580-8c84-11e9-8505-cfe485e72db1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*======ABOUT ME SECTION=======*/
+.myPhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.aboutMe {
+  padding-top: 8%;
+  overflow: auto;
+}
+
+#aboutMe {
+}
+
+.button {
+  display: block;
+  height: 50px;
+  width: 200px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+/*======PORTFOLIO SECTION=======*/
+.portfolio {
+  clear: both;
+  padding-top: 9%;
+}
+.project {
+  display: inline-block;
+  background: white;
+  padding: 3% 5%;
+  width: 90%;
+  min-width: 250px;
+  margin: 3px auto;
+}
+
+.projectImage {
+  float: right;
+  width: 50%;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+/*======FOOTER SECTION=======*/
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+a:hover {
+  background: #ddd;
+}
+
+.fa {
+  margin-right: 15px;
+}
+
+.copyright {
+  font-size: 0.6em;
+}
+
+@media only screen and (min-width: 415px) {
+  .project {
+    display: inline-block;
+    background: white;
+    padding: 3% 5%;
+    width: 45%;
+    min-width: 250px;
+    margin: 3px auto;
+  }
+
+  .aboutText {
+    float: left;
+    width: 50%;
+    padding: 0 3% 3%;
+  }
+
+  .skillsText {
+    float: right;
+    width: 50%;
+    padding: 3%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .aboutMe {
+    padding-top: 20%;
+    overflow: auto;
+  }
+  .portfolio {
+    padding-top: 15%;
+  }
+}
