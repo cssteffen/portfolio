@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-family: "Myriad-pro", sans-serif;
   font-size: 20px;
   color: rgb(63, 63, 63);
   text-align: center;
@@ -15,6 +15,24 @@ main {
 
 h2 {
   margin: 0;
+  padding-top: 2%;
+  padding-bottom: 5px;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 30px;
 }
 h4 {
   text-transform: uppercase;
@@ -25,10 +43,19 @@ a {
   text-decoration: none;
 }
 
+a:link {
+  color: #bbb;
+}
+
+a:visited {
+  color: #bbb;
+}
+
 nav,
 footer {
   padding: 0% 0;
-  background-color: #aaa;
+  background-color: #414245;
+  color: #bbb;
 }
 
 section {
@@ -38,6 +65,9 @@ section {
   background-color: #bbb;
 }
 
+/*section:nth-child(even) {
+  background-color: #ddd;
+}*/
 /*======End of Global======*/
 
 /*======NAVIGATION SECTION=======*/
@@ -57,118 +87,325 @@ ul {
 }
 
 li {
-  margin-right: 10px;
-  padding: 3px;
+  margin-right: 25px;
+  padding: 5px;
+}
+.navLi li {
+  transform: skew(16deg);
+  padding: 5px;
+}
+.navLi li:hover {
+  color: #363b54;
+  background: #fff;
 }
 
-li:hover {
-  background: #ddd;
+.noSkew {
+  transform: skew(-16deg);
 }
 
 /*======HEADER SECTION=======*/
 header {
-  padding: 10% 0;
-  background-color: white;
+  padding: 9% 0;
+  background: url(https://user-images.githubusercontent.com/30050423/59303042-e3630580-8c84-11e9-8505-cfe485e72db1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.logo {
+  width: 40%;
+  min-width: 300px;
+  margin: 100px auto 0 auto;
+}
+
+.welcome {
+  color: #414245;
+  text-transform: uppercase;
+}
 
 /*======ABOUT ME SECTION=======*/
-.myPhoto {
-  background-color: #aaa;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
 .aboutMe {
   padding-top: 8%;
   overflow: auto;
 }
 
-#aboutMe {
+.myPhoto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.aboutText {
+  padding: 0 5%;
 }
 
-.button {
+.skillsText {
+  width: 50%;
+  min-width: 300px;
+  padding-top: 1%;
+}
+
+.pictureImage {
+  width: 40%;
+  float: left;
+  padding-left: 8%;
+}
+.letsConnect {
+  min-width: 300px;
+  width: 50%;
+}
+
+.letsConnect a {
+  color: #363b52;
+}
+
+.fa:hover {
+  color: #e5a038;
+}
+
+.fa {
+  margin-right: 15px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.btn {
   display: block;
+  font-size: 16px;
   height: 50px;
   width: 200px;
-  padding: 5px;
   margin: 0 auto;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #363b52;
+}
+
+.btn:hover {
+  background: #e5a038;
+  color: #414245;
 }
 
 /*======PORTFOLIO SECTION=======*/
+.portfolio h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 34px;
+  line-height: 1.5;
+  padding-bottom: 2%;
+}
 .portfolio {
   clear: both;
   padding-top: 9%;
 }
 .project {
-  display: inline-block;
+  display: inline-flex;
   background: white;
   padding: 3% 5%;
   width: 90%;
-  min-width: 250px;
+  min-height: 610px;
+  /*min-width: 300px;*/
   margin: 3px auto;
 }
 
 .projectImage {
-  background-color: gray;
   float: right;
-  width: 200px;
-  height: 250px;
+  width: 50%;
   margin-bottom: 5px;
   margin-left: 10px;
 }
 
+.colorscheme {
+  clear: right;
+  float: right;
+  width: 150px;
+  margin: 0;
+}
+
+.project p {
+  text-align: left;
+}
+
+.projectLinks {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+.gitLinks {
+  clear: both;
+  text-align: center;
+}
+
+.project a {
+  color: #363b54;
+  border: 1px solid #363b54;
+  padding: 8px;
+}
+.project a:hover {
+  color: #fff;
+  background: #363b54;
+  padding: 8px;
+}
+
 /*======FOOTER SECTION=======*/
 
-a:link {
-  color: black;
-}
-
-a:visited {
-  color: black;
-}
-a:hover {
-  background: #ddd;
-}
-
-.fa {
-  margin-right: 15px;
-}
-
 .copyright {
+  margin: 0;
   font-size: 0.6em;
 }
 
-@media only screen and (min-width: 415px) {
+/*===========================*/
+
+/*======@MEDIA QUERIES=======*/
+@media only screen and (min-width: 1024px) {
+  .aboutText {
+    padding-left: 8%;
+    max-width: 600px;
+    margin: 0 auto;
+    float: left;
+    width: 50%;
+  }
+
+  .aboutText p {
+    text-align: left;
+  }
+
+  .skillsText {
+    float: left;
+  }
+
+  .letsConnect {
+    float: left;
+  }
+
+  .portfolio {
+    clear: both;
+    padding-top: 9%;
+  }
+
+  .portfolio h2 {
+    font-size: 48px;
+  }
+
   .project {
     display: inline-block;
     background: white;
     padding: 3% 5%;
-    width: 45%;
-    min-width: 250px;
+    min-height: 610px;
     margin: 3px auto;
+    width: 30%;
   }
 
-  .aboutText {
-    float: left;
-    width: 50%;
-    padding: 0 3% 3%;
-  }
-
-  .skillsText {
+  .projectImage {
     float: right;
     width: 50%;
-    padding: 3%;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .colorscheme {
+    clear: right;
+    float: right;
+    width: 150px;
+    margin: 0;
+  }
+
+  .project p {
+    text-align: left;
+  }
+
+  .projectLinks {
+    display: block;
+    margin: 0 auto;
+  }
+  .gitLinks {
+    clear: both;
+    text-align: center;
   }
 }
 
-@media only screen and (max-width: 414px) {
-  .aboutMe {
-    padding-top: 20%;
-    overflow: auto;
-  }
-  .portfolio {
-    padding-top: 15%;
-  }
+/*
+@media only screen and (min-width: 415px) and (max-width: 1023px) {
+  .aboutText {
+    padding-left: 8%;
+    max-width: 600px;
+    margin: 0 auto;
+    float: left;
+    width: 50%;
 }
+
+  .aboutText p {
+    text-align: left;
+}
+
+.skillsText {
+  float: left;
+}
+
+.letsConnect {
+  float: left;
+}
+
+.portfolio h2 {
+  font-size: 48px;
+}
+.project {
+  display: inline-block;
+  background: white;
+  padding: 3% 5%;
+  width: 45%;
+  min-width: 250px;
+  min-height: 600px;
+  margin: 3px auto;
+}
+
+}
+
+@media only screen and (max-width: 414px){
+
+header {
+ padding: 0;
+
+}  
+.aboutMe {
+  padding-top: 20%;
+  overflow: auto;
+}
+.portfolio {
+  padding-top: 15%;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+h2 {
+  margin:0;
+  padding-top: .5%;
+  padding-bottom: 3px;
+  font-family: Helvetica; font-size: 21px; 
+  font-style: normal; font-variant: normal; font-weight: 700; 
+  line-height: 30px;
+}
+h3 {
+  margin:0;
+  padding-bottom: 3px;
+  font-family: Helvetica; font-size: 17px; 
+  font-style: normal; font-variant: normal; font-weight: 300; 
+  line-height: 30px; 
+}
+.myPhoto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.skillsText {
+  margin: 0 auto;
+}
+
+.letsConnect {
+  margin: 0 auto;
+}
+.pictureImage {
+  display: none;
+}
+
+
+}
+
+*/
