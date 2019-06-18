@@ -38,9 +38,6 @@ section {
   background-color: #bbb;
 }
 
-/*section:nth-child(even) {
-  background-color: #ddd;
-}*/
 /*======End of Global======*/
 
 /*======NAVIGATION SECTION=======*/
@@ -60,7 +57,6 @@ ul {
 }
 
 li {
-  //display: none;
   margin-right: 10px;
   padding: 3px;
 }
@@ -72,13 +68,14 @@ li:hover {
 /*======HEADER SECTION=======*/
 header {
   padding: 10% 0;
-  background: url(https://user-images.githubusercontent.com/30050423/59303042-e3630580-8c84-11e9-8505-cfe485e72db1.jpg);
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /*======ABOUT ME SECTION=======*/
 .myPhoto {
+  background-color: #aaa;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -114,8 +111,10 @@ header {
 }
 
 .projectImage {
+  background-color: gray;
   float: right;
-  width: 50%;
+  width: 200px;
+  height: 250px;
   margin-bottom: 5px;
   margin-left: 10px;
 }
