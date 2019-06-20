@@ -6,12 +6,13 @@
 body {
   font-family: "Myriad-pro", sans-serif;
   font-size: 20px;
-  color: rgb(63, 63, 63);
+  color: #363b52;
   text-align: center;
   line-height: 1.5;
 }
+/*
 main {
-}
+}*/
 
 h2 {
   margin: 0;
@@ -36,7 +37,8 @@ h3 {
 }
 h4 {
   text-transform: uppercase;
-  margin: 0;
+  /*margin: 0;*/
+  color: #363b54;
 }
 
 a {
@@ -86,11 +88,12 @@ ul {
   list-style: none;
 }
 
-li {
-  margin-right: 25px;
+nav li {
   padding: 5px;
+  margin-right: 3px;
 }
 .navLi li {
+  margin-right: 12px;
   transform: skew(16deg);
   padding: 5px;
 }
@@ -103,6 +106,15 @@ li {
   transform: skew(-16deg);
 }
 
+.noSkew > a:hover {
+  color: #363b54;
+}
+
+.navContact {
+  float: right;
+  margin-right: 2%;
+}
+
 /*======HEADER SECTION=======*/
 header {
   padding: 9% 0;
@@ -113,23 +125,24 @@ header {
 .logo {
   width: 40%;
   min-width: 300px;
-  margin: 100px auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 
 .welcome {
   color: #414245;
   text-transform: uppercase;
+  padding-bottom: 200px;
 }
 
 /*======ABOUT ME SECTION=======*/
 .aboutMe {
-  padding-top: 8%;
+  padding-top: 15%;
   overflow: auto;
 }
 
 .myPhoto {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -140,17 +153,22 @@ header {
 .skillsText {
   width: 50%;
   min-width: 300px;
-  padding-top: 1%;
+  padding: 1% 5% 0% 5%;
+  margin: 0 auto;
 }
-
+/*
 .pictureImage {
-  width: 40%;
   float: left;
   padding-left: 8%;
+  width: 40%;
 }
+*/
+
 .letsConnect {
   min-width: 300px;
   width: 50%;
+  padding: 1% 5% 0% 5%;
+  margin: 0 auto;
 }
 
 .letsConnect a {
@@ -165,6 +183,12 @@ header {
   margin-right: 15px;
   padding-top: 1%;
   padding-bottom: 1%;
+  margin-bottom: 10px;
+}
+
+.letsConnect > .fa {
+  font-size: 50px;
+  margin: 10px 5px 10px 5px;
 }
 
 .btn {
@@ -192,14 +216,14 @@ header {
 }
 .portfolio {
   clear: both;
-  padding-top: 9%;
+  padding-top: 11%;
 }
 .project {
-  display: inline-flex;
+  /*display: inline-flex;*/
   background: white;
   padding: 3% 5%;
   width: 90%;
-  min-height: 610px;
+  /*min-height: 610px;*/
   /*min-width: 300px;*/
   margin: 3px auto;
 }
@@ -209,6 +233,7 @@ header {
   width: 50%;
   margin-bottom: 5px;
   margin-left: 10px;
+  margin-top: 5px;
 }
 
 .colorscheme {
@@ -224,12 +249,15 @@ header {
 
 .projectLinks {
   display: block;
-  width: 50%;
+  /*width: 50%;*/
   margin: 0 auto;
 }
 .gitLinks {
   clear: both;
-  text-align: center;
+  width: 50%;
+  margin: 0 auto 5px auto;
+  display: flex;
+  
 }
 
 .project a {
@@ -242,17 +270,177 @@ header {
   background: #363b54;
   padding: 8px;
 }
+/*
+.project a:visited {
+  color: #fff;
+  background: #363b54;
+  padding: 8px;
+}*/
+
+.photoFiller {
+  width: 100%;
+}
 
 /*======FOOTER SECTION=======*/
 
 .copyright {
-  margin: 0;
+  margin: 0px;
   font-size: 0.6em;
 }
+.contactMe {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+.contactMe > .fa {
+  padding-bottom: 0px;
+}
 /*===========================*/
 
-/*======@MEDIA QUERIES=======*/
+
+/*======@MEDIA QUERIES (max-with: 767px)=======*/
+@media only screen and (max-width: 767px) {
+.pictureImage {
+  display: none;
+}
+}
+/*==============================================*/
+
+/*======@MEDIA QUERIES (min-width: 768px)=======*/
+@media only screen and (min-width: 768px){
+.aboutMe {
+  padding-top: 10%;
+}
+
+.aboutText {
+  float: left;
+  width: 50%;
+}
+
+.skillsText {
+  width: 50%;
+  float: left;
+}
+
+.letsConnect {
+  float: right;
+  margin: 10px auto 0 auto;
+
+}
+
+.letsConnect > .fa {
+  font-size: 50px;
+  margin: 10px 10px 20px 10px;
+}
+
+.letsConnect > h4 {
+  margin: 20px 5px 10px 5px;
+}
+
+.pictureImage {
+  float: left;
+  /*margin-top: -10px;*/
+  width: 40%;
+  padding-left: 8%;
+  margin-right: 8%;
+}
+
+.portfolio {
+  clear: both;
+  padding-top: 5%;
+  width: 100%;
+  float: left;
+}
+
+.portfolio > h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  padding-bottom: 2%;
+}
+.project {
+  width: 45%;
+  float: left;
+  margin: 3px;
+  min-height: 638.9px;
+}
+.projectContainer {
+  margin-left: 40px;
+}
+
+.projectLinks {
+  clear: both;
+}
+
+footer {
+  clear: both;
+}
+}
+
+/*==============================================*/
+
+/*======@MEDIA QUERIES (min-width: 992px)=======*/
+@media only screen and (min-width: 992px) {
+.aboutMe {
+  padding-top: 9%;
+}
+.pictureImage {
+  clear: left;
+  float: left;
+  width: 40%;
+  padding-left: 8%;
+  margin-right: 8%;
+  /*margin-top: -110px;*/
+
+}
+.portfolio {
+  padding-top: 5%;
+}
+.portfolio > h2 {
+  font-size: 48px;
+}
+
+.projectContainer {
+  margin-left: 80px;
+}
+}
+
+/*==============================================*/
+
+/*======@MEDIA QUERIES (min-width: 1200px)=======*/
+
+@media only screen and (min-width: 1200px) {
+.aboutMe {
+  padding-top: 6%;
+}
+
+  .pictureImage {
+  float: left;
+  width: 40%;
+  padding-left: 8%;
+  margin-right: 8%;
+  /*margin-top: -110px;*/
+}
+
+.letsConnect {
+  float: right;
+}
+
+.portfolio {
+  padding-top: 3%;
+  }
+
+  .projectContainer {
+    margin-left: 70px;
+  }
+
+  .project{
+    width: 31%;
+    height: 679px;
+  }
+}
+
+/*==============================================*/
+/*
 @media only screen and (min-width: 1024px) {
   .aboutText {
     padding-left: 8%;
@@ -320,92 +508,101 @@ header {
   }
 }
 
-/*
-@media only screen and (min-width: 415px) and (max-width: 1023px) {
+/* common breakpoints
+@custom-media --viewport-4 (min-width: 480px);
+@custom-media --viewport-7 (min-width: 768px);
+@custom-media --viewport-9 (min-width: 992px);
+@custom-media --viewport-12 (min-width: 1200px);
+@media only screen and (min-width: 480px) {
   .aboutText {
     padding-left: 8%;
     max-width: 600px;
     margin: 0 auto;
     float: left;
     width: 50%;
-}
+  }
 
   .aboutText p {
     text-align: left;
+  }
+
+  .skillsText {
+    float: left;
+  }
+
+  .letsConnect {
+    float: left;
+  }
+
+  .portfolio h2 {
+    font-size: 48px;
+  }
+  .project {
+    display: inline-block;
+    background: white;
+    padding: 3% 5%;
+    width: 45%;
+    min-width: 250px;
+    min-height: 600px;
+    margin: 3px auto;
+  }
 }
 
-.skillsText {
-  float: left;
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 0;
+  }
+  .aboutMe {
+    padding-top: 20%;
+    overflow: auto;
+  }
+  .portfolio {
+    padding-top: 15%;
+  }
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  h2 {
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 3px;
+    font-family: Helvetica;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  h3 {
+    margin: 0;
+    padding-bottom: 3px;
+    font-family: Helvetica;
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  .myPhoto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .skillsText {
+    margin: 0 auto;
+  }
+
+  .letsConnect {
+    margin: 0 auto;
+  }
+  .pictureImage {
+    display: none;
+  }
 }
 
-.letsConnect {
-  float: left;
+@media only screen and (min-width: 992px) {
 }
 
-.portfolio h2 {
-  font-size: 48px;
+@media only screen and (min-width: 1200px) {
 }
-.project {
-  display: inline-block;
-  background: white;
-  padding: 3% 5%;
-  width: 45%;
-  min-width: 250px;
-  min-height: 600px;
-  margin: 3px auto;
-}
-
-}
-
-@media only screen and (max-width: 414px){
-
-header {
- padding: 0;
-
-}  
-.aboutMe {
-  padding-top: 20%;
-  overflow: auto;
-}
-.portfolio {
-  padding-top: 15%;
-}
-body {
-  font-size: 16px;
-  line-height: 1.5;
-}
-h2 {
-  margin:0;
-  padding-top: .5%;
-  padding-bottom: 3px;
-  font-family: Helvetica; font-size: 21px; 
-  font-style: normal; font-variant: normal; font-weight: 700; 
-  line-height: 30px;
-}
-h3 {
-  margin:0;
-  padding-bottom: 3px;
-  font-family: Helvetica; font-size: 17px; 
-  font-style: normal; font-variant: normal; font-weight: 300; 
-  line-height: 30px; 
-}
-.myPhoto {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-.skillsText {
-  margin: 0 auto;
-}
-
-.letsConnect {
-  margin: 0 auto;
-}
-.pictureImage {
-  display: none;
-}
-
-
-}
-
-*/
