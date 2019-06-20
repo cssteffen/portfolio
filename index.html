@@ -2,24 +2,33 @@
 <html lang="en">
 <head>
     <title>HTML wireframe</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cara Steffen Portfolio, Web Developer, Graphic Design, Photography">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
   <a id="top"></a>
     <nav role="navigation">
-      <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#aboutMe">About</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contactMe">Contact</a></li>
+      <ul class="navLi">
+      <li><div class="noSkew"><a href="#"><b>CARA STEFFEN</b></a></div></li>
+      <li><div class="noSkew"><a href="#aboutMe">Bio</a></div></li>
+      <li><div class="noSkew"><a href="#portfolio">Portfolio</a></div></li>
+
+      </ul>
+      <ul class="navContact">
+      <li><a href = "https://www.linkedin.com/in/cara-steffen/"<i style="font-size:24px" class="fa icon-linkedIn">&#xf08c</i></a></li>
+       <li><a href = "https://github.com/cssteffen"<i style="font-size:24px" class="fa icon-gitHub">&#xf09b;</i></a></li>
+      <li><a href ="mailto: cara@treadstonedesign.com" <i style="font-size:24px" class="fa icon-email">&#xf0e0;</i></a></li>
       </ul>
     </nav>
     <main role="main">
-        <header role="banner">
-            <h1>Cara Steffen</h1>
+        <header role="banner" class="welcome">
+          <img class="logo" src="https://user-images.githubusercontent.com/30050423/59396803-e55ac080-8d79-11e9-929a-4758053a470c.png" alt="Cara Steffen">
+            <!--<h1>Cara Steffen</h1>-->
             <h2>web developer</h2><h3>+ graphic designer, photographer</h3>
         </header>
 <!--ABOUT ME SECTION-->
@@ -27,7 +36,7 @@
         <section class="aboutMe">
           <img class= "myPhoto" src="https://user-images.githubusercontent.com/30050423/59306483-d72e7680-8c8b-11e9-9e96-8117d4258d39.png" alt="photo of Cara">
           <div class="aboutText">
-          <h4>About Me</h4><p>Loves efficiency, creating effective solutions, people, coffee, the great outdoors & a good margarita. After taking some time off to be a full-time mom, she graduated with high honors from ASU with a degree in web development and is a current Thinkful Full-Stack Student to sharpen her tech ninja skills. </p>
+          <h4>About Cara</h4><p>Loves efficiency, creating effective solutions, people, coffee, the great outdoors & a good margarita. After taking some time off to be a full-time mom, she graduated with high honors from ASU with a degree in web development and is a current Thinkful Full-Stack coding bootcamp student to sharpen her tech ninja skills. </p>
           </div>
           <!--
           <h4>Education</h4>
@@ -37,44 +46,108 @@
           <h4>Skills Include</h4>
           <p>HTML, CSS, JavaScript, jQuery</p> 
           </div>
-          <!--
-          <button class="button">
-          <p><a href="mailto: cara@treadstonedesign.com">Contact Me</a></p>
-          </button>-->
+ <div class="letsConnect">
+          <h4>Let's Connect</h4>
+      <a href = "https://www.linkedin.com/in/cara-steffen/"<i style="font-size:50px" class="fa icon-linkedIn">&#xf08c</i></a>
+      <a href = "https://github.com/cssteffen"<i style="font-size:50px" class="fa icon-gitHub">&#xf09b;</i></a>
+      <a href ="mailto: cara@treadstonedesign.com" <i style="font-size:50px" class="fa icon-email">&#xf0e0;</i></a>
+      <button class="email btn">
+          <p><a href="mailto: cara@treadstonedesign.com">EMAIL CARA</a></p>
+          </button>
+          </div>
+          <img class="pictureImage" src="https://user-images.githubusercontent.com/30050423/59455612-154ea600-8e04-11e9-882a-d41efeea6df9.png" alt="picture of computer and camera on desk">
         </section>
 <!--PORTFOLIO SECTION-->
         <a id="portfolio"></a>
         <section class="portfolio">
             <h2>Portfolio</h2>
+        <div class="projectContainer">
           <div class="project pro1">
             <h4>Colorado IQ Quiz App</h4>
             <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/58735165-18e83300-83e9-11e9-828e-5326da4ef35a.png" alt="image of Colorado Quiz App">
             <p>Test your CO IQ and challenge your friends on their knowledge of the great Centennial State with this Quiz App. Winner gets bragging rights.</p><p>Built using HTML, CSS, JavaScript & jQuery. </p>
-            <a href="https://github.com/cssteffen/FINAL-ColoradoQuizApp"<p>GitHub</a> | <a href="https://cssteffen.github.io/FINAL-ColoradoQuizApp/">Demo</p></a>
+            <div class="projectLinks">
+              <p class="gitLinks"><a href="https://github.com/cssteffen/FINAL-ColoradoQuizApp" target="_blank">GitHub</a><a href="https://cssteffen.github.io/FINAL-ColoradoQuizApp/" target="_blank">Demo</a></p>
+             </div> 
+            </div>
           </div>
           
+          <div class="projectContainer">
            <div class="project pro2">
-            <h4>Colorado IQ Quiz App</h4>
-            <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/58735165-18e83300-83e9-11e9-828e-5326da4ef35a.png" alt="image of Colorado Quiz App">
-            <p>Test your CO IQ and challenge your friends on their knowledge of the great Centennial State with this Quiz App. Winner gets bragging rights.</p><p>Built using HTML, CSS, JavaScript & jQuery. </p>
-            <a href="https://github.com/cssteffen/FINAL-ColoradoQuizApp"<p>GitHub</a> | <a href="https://cssteffen.github.io/FINAL-ColoradoQuizApp/">Demo</p></a>
+            <h4>Elmcrate Website</h4>
+            <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/59475770-ef91c300-8e3c-11e9-86d6-b40656edf905.png" alt="image of Elmcrate Website">
+            <p>The first portfolio website showcasing my graphic design, web development and photography skills. Logo design and color scheme inspired by the outdoor non-traditional office setting I often use.</p><p>Built using HTML, CSS, JavaScript & jQuery. </p>
+            <div class="projectLinks">
+              <p class="gitLinks"><a href="https://github.com/cssteffen/Elmcrate" target="_blank">GitHub</a><a href="https://cssteffen.github.io/Elmcrate/index.html" target="_blank">Demo</a></p>
+              </div>  
+
+          </div>
+        </div>
+
+              <!-- PHOTO HOLDER - Graphic Design -->
+        <div class="projectContainer">
+            <div class="project pro3">
+              <img class="photoFiller" src="https://user-images.githubusercontent.com/30050423/59813799-6aa61e00-9302-11e9-866a-ae6c307ceffb.png" alt="Alpaca farm photography design.">
+
+              <!--
+              <h4>Photography</h4>
+              <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/59475770-ef91c300-8e3c-11e9-86d6-b40656edf905.png" alt="image of Elmcrate Website">
+              <img class="colorscheme" src="https://user-images.githubusercontent.com/30050423/59477474-d9880080-8e44-11e9-83e3-304de3cc92f9.png" alt="Elmcrate color scheme">
+              <p>Info about photography</p><p>Built using HTML, CSS, JavaScript & jQuery. </p>
+              <div class="projectLinks">
+                <p class="gitLinks"><a href="https://github.com/cssteffen/Elmcrate" target="_blank">GitHub</a><a href="https://cssteffen.github.io/Elmcrate/index.html" target="_blank">Demo</a></p>
+             </div>-->
+            </div>
           </div>
 
-          <div class="project pro3">
-            <h4>Project 3</h4>
+
+
+        <div class="projectContainer">
+          <div class="project pro4">
+            <h4>Graphic Design</h4>
+            <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/59815554-6da40d00-9308-11e9-9a8e-7405559cdbc2.png" alt="image of Graphic Design work gallery">
+            <p>A simple photo gallery featuring a small sampling of graphic design work I have created.</p><p>Built using HTML, CSS + Creative Suite, including Photoshop and Illustrator. </p>
+            <div class="projectLinks">
+              <p class="gitLinks"><a href="https://github.com/cssteffen/Elmcrate" target="_blank">GitHub</a><a href="https://cssteffen.github.io/Elmcrate/index.html" target="_blank">Demo</a></p>
+           </div>
           </div>
-          <div class="project pro3">
-            <h4>Project 4</h4>
+        </div>
+              <!-- PHOTO HOLDER - Photography -->
+              <div class="projectContainer">
+                  <div class="project pro5">
+                    <img class="photoFiller" src="https://user-images.githubusercontent.com/30050423/59814823-287edb80-9306-11e9-9e3d-3bb983be5046.png" alt="Fashion photo of girl laughing">
+      
+                    <!--
+                    <h4>Photography</h4>
+                    <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/59475770-ef91c300-8e3c-11e9-86d6-b40656edf905.png" alt="image of Elmcrate Website">
+                    <img class="colorscheme" src="https://user-images.githubusercontent.com/30050423/59477474-d9880080-8e44-11e9-83e3-304de3cc92f9.png" alt="Elmcrate color scheme">
+                    <p>Info about photography</p><p>Built using HTML, CSS, JavaScript & jQuery. </p>
+                    <div class="projectLinks">
+                      <p class="gitLinks"><a href="https://github.com/cssteffen/Elmcrate" target="_blank">GitHub</a><a href="https://cssteffen.github.io/Elmcrate/index.html" target="_blank">Demo</a></p>
+                   </div>-->
+                  </div>
+                </div>
+
+
+        <div class="projectContainer">
+            <div class="project pro6">
+              <h4>Photography</h4>
+              <img class="projectImage" src="https://user-images.githubusercontent.com/30050423/59815566-75fc4800-9308-11e9-8405-e8d884bcf72f.png" alt="image of Photography Gallery">
+              <p>Award-winning photography featuring senior portraiture, children, weddings and commercial shoots I have done. </p><p>Photography shot on Cannon, software includes, Photoshop and LightRoom </p>
+              <div class="projectLinks">
+                <p class="gitLinks"><a href="https://github.com/cssteffen/Elmcrate" target="_blank">GitHub</a><a href="https://cssteffen.github.io/Elmcrate/index.html" target="_blank">Demo</a></p>
+             </div>
+            </div>
           </div>
+
         </section>        
     </main>
-    <a id="contactMe">
-    <footer role="content-info">
-      <h2>Contact</h2>
+    <a id="contactMe"></a>
+    <footer role="content-info" class="contactMe">
       <a href = "https://www.linkedin.com/in/cara-steffen/"<i style="font-size:24px" class="fa icon-linkedIn">&#xf08c</i></a>
       <a href = "https://github.com/cssteffen"<i style="font-size:24px" class="fa icon-gitHub">&#xf09b;</i></a>
       <a href ="mailto: cara@treadstonedesign.com" <i style="font-size:24px" class="fa icon-email">&#xf0e0;</i></a>
-      <p class= "copyright">copyright by Cara Steffen 2019</p>
+      <p class="copyright">copyright by Cara Steffen 2019</p>
     </footer>
 </body>
 </html>
