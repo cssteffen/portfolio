@@ -13,7 +13,7 @@
 <body>
   <a id="top"></a>
     <nav role="navigation">
-      <div class="topnav"><!-- Top Navigation Menu -->
+      <div class="topnav" id="topnav"><!-- Top Navigation Menu -->
       <ul class="navLi">
       <li><div class="noSkew headline"><a href="#"><b>CARA STEFFEN</b></a></div></li>
       <!--div class="myLinks">    Navigation links (hidden by default) -->
@@ -21,8 +21,8 @@
       <li><div class="noSkew"><a href="#portfolio">Portfolio</a></div></li>
     
         <!-- "Hamburger menu" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+        <!--<a href="javascript:void(0);" class="icon hamburger" onclick="myFunction()">
+            <i class="fa fa-bars"></i>-->
     </div>
       </ul>
       <ul class="navContact">
@@ -157,15 +157,24 @@
     </footer>
     <script>
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
+  /*function myFunction() {
+  var x = document.getElementById("topnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}*/
+/*
+    function myFunction() {
   
-  var x = document.getElementsByClassName("noSkew");
+  var x = document.getElementById("topnav");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   } 
-} 
+} */
     </script>
 </body>
 </html>
