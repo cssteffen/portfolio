@@ -73,6 +73,7 @@ section {
 /*======End of Global======*/
 
 /*======NAVIGATION SECTION=======*/
+
 nav {
   position: fixed;
   top: 0;
@@ -257,7 +258,6 @@ header {
   width: 50%;
   margin: 0 auto 5px auto;
   display: flex;
-  
 }
 
 .project a {
@@ -297,111 +297,166 @@ header {
 }
 /*===========================*/
 
-
 /*======@MEDIA QUERIES (max-with: 767px)=======*/
 @media only screen and (max-width: 767px) {
-.pictureImage {
-  display: none;
-}
+  .pictureImage {
+    display: none;
+  }
+  /*=====TESTING HAMBURGER NAV=======*/
+  /* Style the navigation menu */
+  .topnav {
+    overflow: hidden;
+    background-color: #414245;
+    position: relative;
+    max-height: 60px;
+  }
+
+  .headline {
+    margin-left: 20px;
+  }
+
+  .navContact {
+    display: none;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    /*color: white;
+    font-size: 17px;
+*/
+    text-decoration: none;
+    display: block;
+  }
+  /* Style the hamburger menu */
+  .topnav a.hamburger {
+    /*background: black;
+    */
+    position: absolute;
+    display: block;
+    right: 10;
+    top: 10;
+  }
+
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #e5a038;
+    color: black;
+  }
+
+  /* Style the active link (or home/logo) */
+  /*
+  .active {
+    background-color: #414245;
+    color: black;
+  }*/
+
+  /*===========================*/
 }
 /*==============================================*/
 
 /*======@MEDIA QUERIES (min-width: 768px)=======*/
-@media only screen and (min-width: 768px){
-.aboutMe {
-  padding-top: 10%;
-}
+@media only screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 
-.aboutText {
-  float: left;
-  width: 50%;
-}
+  /*=================*/
+  .aboutMe {
+    padding-top: 10%;
+  }
 
-.skillsText {
-  width: 50%;
-  float: left;
-}
+  .aboutText {
+    float: left;
+    width: 50%;
+  }
 
-.letsConnect {
-  float: right;
-  margin: 10px auto 0 auto;
+  .skillsText {
+    width: 50%;
+    float: left;
+  }
 
-}
+  .letsConnect {
+    float: right;
+    margin: 10px auto 0 auto;
+  }
 
-.letsConnect > .fa {
-  font-size: 50px;
-  margin: 10px 10px 20px 10px;
-}
+  .letsConnect > .fa {
+    font-size: 50px;
+    margin: 10px 10px 20px 10px;
+  }
 
-.letsConnect > h4 {
-  margin: 20px 5px 10px 5px;
-}
+  .letsConnect > h4 {
+    margin: 20px 5px 10px 5px;
+  }
 
-.pictureImage {
-  float: left;
-  /*margin-top: -10px;*/
-  width: 40%;
-  padding-left: 8%;
-  margin-right: 8%;
-}
+  .pictureImage {
+    float: left;
+    /*margin-top: -10px;*/
+    width: 40%;
+    padding-left: 8%;
+    margin-right: 8%;
+  }
 
-.portfolio {
-  clear: both;
-  padding-top: 5%;
-  width: 100%;
-  float: left;
-}
+  .portfolio {
+    clear: both;
+    padding-top: 5%;
+    width: 100%;
+    float: left;
+  }
 
-.portfolio > h2 {
-  font-size: 48px;
-  line-height: 1.5;
-  padding-bottom: 2%;
-}
-.project {
-  width: 45%;
-  float: left;
-  margin: 3px;
-  min-height: 638.9px;
-}
-.projectContainer {
-  margin-left: 40px;
-}
+  .portfolio > h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    padding-bottom: 2%;
+  }
+  .project {
+    width: 45%;
+    float: left;
+    margin: 3px;
+    min-height: 638.9px;
+  }
+  .projectContainer {
+    margin-left: 40px;
+  }
 
-.projectLinks {
-  clear: both;
-}
+  .projectLinks {
+    clear: both;
+  }
 
-footer {
-  clear: both;
-}
+  footer {
+    clear: both;
+  }
 }
 
 /*==============================================*/
 
 /*======@MEDIA QUERIES (min-width: 992px)=======*/
 @media only screen and (min-width: 992px) {
-.aboutMe {
-  padding-top: 9%;
-}
-.pictureImage {
-  clear: left;
-  float: left;
-  width: 40%;
-  padding-left: 8%;
-  margin-right: 8%;
-  /*margin-top: -110px;*/
+  .aboutMe {
+    padding-top: 9%;
+  }
+  .pictureImage {
+    clear: left;
+    float: left;
+    width: 40%;
+    padding-left: 8%;
+    margin-right: 8%;
+    /*margin-top: -110px;*/
+  }
+  .portfolio {
+    padding-top: 5%;
+  }
+  .portfolio > h2 {
+    font-size: 48px;
+  }
 
-}
-.portfolio {
-  padding-top: 5%;
-}
-.portfolio > h2 {
-  font-size: 48px;
-}
-
-.projectContainer {
-  margin-left: 80px;
-}
+  .projectContainer {
+    margin-left: 80px;
+  }
 }
 
 /*==============================================*/
@@ -409,200 +464,34 @@ footer {
 /*======@MEDIA QUERIES (min-width: 1200px)=======*/
 
 @media only screen and (min-width: 1200px) {
-.aboutMe {
-  padding-top: 6%;
-}
+  .aboutMe {
+    padding-top: 6%;
+  }
 
   .pictureImage {
-  float: left;
-  width: 40%;
-  padding-left: 8%;
-  margin-right: 8%;
-  /*margin-top: -110px;*/
-}
+    float: left;
+    width: 40%;
+    padding-left: 8%;
+    margin-right: 8%;
+    /*margin-top: -110px;*/
+  }
 
-.letsConnect {
-  float: right;
-}
+  .letsConnect {
+    float: right;
+  }
 
-.portfolio {
-  padding-top: 3%;
+  .portfolio {
+    padding-top: 3%;
   }
 
   .projectContainer {
     margin-left: 70px;
   }
 
-  .project{
+  .project {
     width: 31%;
     height: 679px;
   }
 }
 
 /*==============================================*/
-/*
-@media only screen and (min-width: 1024px) {
-  .aboutText {
-    padding-left: 8%;
-    max-width: 600px;
-    margin: 0 auto;
-    float: left;
-    width: 50%;
-  }
-
-  .aboutText p {
-    text-align: left;
-  }
-
-  .skillsText {
-    float: left;
-  }
-
-  .letsConnect {
-    float: left;
-  }
-
-  .portfolio {
-    clear: both;
-    padding-top: 9%;
-  }
-
-  .portfolio h2 {
-    font-size: 48px;
-  }
-
-  .project {
-    display: inline-block;
-    background: white;
-    padding: 3% 5%;
-    min-height: 610px;
-    margin: 3px auto;
-    width: 30%;
-  }
-
-  .projectImage {
-    float: right;
-    width: 50%;
-    margin-bottom: 5px;
-    margin-left: 10px;
-  }
-
-  .colorscheme {
-    clear: right;
-    float: right;
-    width: 150px;
-    margin: 0;
-  }
-
-  .project p {
-    text-align: left;
-  }
-
-  .projectLinks {
-    display: block;
-    margin: 0 auto;
-  }
-  .gitLinks {
-    clear: both;
-    text-align: center;
-  }
-}
-
-/* common breakpoints
-@custom-media --viewport-4 (min-width: 480px);
-@custom-media --viewport-7 (min-width: 768px);
-@custom-media --viewport-9 (min-width: 992px);
-@custom-media --viewport-12 (min-width: 1200px);
-@media only screen and (min-width: 480px) {
-  .aboutText {
-    padding-left: 8%;
-    max-width: 600px;
-    margin: 0 auto;
-    float: left;
-    width: 50%;
-  }
-
-  .aboutText p {
-    text-align: left;
-  }
-
-  .skillsText {
-    float: left;
-  }
-
-  .letsConnect {
-    float: left;
-  }
-
-  .portfolio h2 {
-    font-size: 48px;
-  }
-  .project {
-    display: inline-block;
-    background: white;
-    padding: 3% 5%;
-    width: 45%;
-    min-width: 250px;
-    min-height: 600px;
-    margin: 3px auto;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  header {
-    padding: 0;
-  }
-  .aboutMe {
-    padding-top: 20%;
-    overflow: auto;
-  }
-  .portfolio {
-    padding-top: 15%;
-  }
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  h2 {
-    margin: 0;
-    padding-top: 0.5%;
-    padding-bottom: 3px;
-    font-family: Helvetica;
-    font-size: 21px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 30px;
-  }
-  h3 {
-    margin: 0;
-    padding-bottom: 3px;
-    font-family: Helvetica;
-    font-size: 17px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 300;
-    line-height: 30px;
-  }
-  .myPhoto {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  .skillsText {
-    margin: 0 auto;
-  }
-
-  .letsConnect {
-    margin: 0 auto;
-  }
-  .pictureImage {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (min-width: 1200px) {
-}
