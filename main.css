@@ -319,7 +319,7 @@ header {
     display: none;
   }
   /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
+  .topnav .noSkew {
     display: none;
   }
 
