@@ -280,12 +280,12 @@ header {
   display: flex;
 }
 
-.project a {
+.project .portfolioLinks {
   color: #363b54;
   border: 1px solid #363b54;
   padding: 8px;
 }
-.project a:hover {
+.projectLinks a:hover {
   color: #fff;
   background: #363b54;
   padding: 8px;
@@ -599,6 +599,10 @@ header {
     width: 31%;
     /*height: 679px;*/
     height: 879px;
+  }
+
+  .pro6 .projectImage {
+    width: 60%;
   }
 }
 
