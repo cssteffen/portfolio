@@ -3,6 +3,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Myriad-pro", sans-serif;
   font-size: 20px;
@@ -149,6 +159,11 @@ header {
 }
 .aboutText {
   padding: 0 5%;
+  text-align: left;
+}
+
+.aboutText > h4 {
+  text-align: center;
 }
 
 .skillsText {
@@ -230,11 +245,16 @@ header {
 }
 
 .projectImage {
-  float: right;
-  width: 50%;
+  /*float: right;
+  width: 50%;*/
+  width: 80%;
   margin-bottom: 5px;
   margin-left: 10px;
   margin-top: 5px;
+}
+
+.pro6 > .projectImage {
+  width: 60%;
 }
 
 .colorscheme {
@@ -577,7 +597,8 @@ header {
 
   .project {
     width: 31%;
-    height: 679px;
+    /*height: 679px;*/
+    height: 879px;
   }
 }
 
