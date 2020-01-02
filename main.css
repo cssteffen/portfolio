@@ -502,7 +502,7 @@ header {
 
   .pictureImage {
     float: left;
-    /*margin-top: -10px;*/
+    margin-top: -120px;
     width: 40%;
     padding-left: 8%;
     margin-right: 8%;
@@ -580,11 +580,12 @@ header {
     width: 40%;
     padding-left: 8%;
     margin-right: 8%;
-    /*margin-top: -110px;*/
+    margin-top: -140px;
   }
 
   .letsConnect {
     float: right;
+    margin-top: -30px;
   }
 
   .portfolio {
