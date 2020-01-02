@@ -172,6 +172,10 @@ header {
   padding: 1% 5% 0% 5%;
   margin: 0 auto;
 }
+
+.skillsText p {
+  text-align: left;
+}
 /*
 .pictureImage {
   float: left;
@@ -251,10 +255,6 @@ header {
   margin-bottom: 5px;
   margin-left: 10px;
   margin-top: 5px;
-}
-
-.pro6 > .projectImage {
-  width: 60%;
 }
 
 .colorscheme {
@@ -602,7 +602,10 @@ header {
   }
 
   .pro6 .projectImage {
-    width: 60%;
+    width: 70%;
+  }
+  .pro9 .projectImage {
+    width: 70%;
   }
 }
 
