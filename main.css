@@ -15,7 +15,7 @@ body {
 
 body {
   font-family: "Myriad-pro", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color: #363b52;
   text-align: center;
   line-height: 1.5;
@@ -241,7 +241,7 @@ header {
 .project {
   /*display: inline-flex;*/
   background: white;
-  padding: 2%;
+  padding: 3%;
   width: 90%;
   /*min-height: 610px;*/
   /*min-width: 300px;*/
@@ -277,7 +277,7 @@ header {
   clear: both;
   width: 50%;
   margin: 0 auto 5px auto;
-  /*display: flex;*/
+  display: flex;
 }
 
 .project .portfolioLinks {
