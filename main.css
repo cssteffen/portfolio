@@ -241,7 +241,7 @@ header {
 .project {
   /*display: inline-flex;*/
   background: white;
-  padding: 3% 5%;
+  padding: 2%;
   width: 90%;
   /*min-height: 610px;*/
   /*min-width: 300px;*/
@@ -277,7 +277,7 @@ header {
   clear: both;
   width: 50%;
   margin: 0 auto 5px auto;
-  display: flex;
+  /*display: flex;*/
 }
 
 .project .portfolioLinks {
