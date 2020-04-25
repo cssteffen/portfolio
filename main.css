@@ -164,6 +164,9 @@ header {
 
 .aboutText > h4 {
   text-align: center;
+}
+
+.aboutText p {
   padding-left: inherit;
 }
 
